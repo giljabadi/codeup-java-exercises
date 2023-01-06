@@ -96,6 +96,12 @@ public class Input {
         }
         return input;
     }
+    public static double Radius () {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a radius for your circle");
+        double input = scanner.nextDouble();
+        return input;
+    }
 
 
 }
