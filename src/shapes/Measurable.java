@@ -1,8 +1,8 @@
 package shapes;
 
-public interface Measurable {
-    public void  getPerimeter();
-    public void  getArea();
-
-
-}
+//public interface Measurable {
+//    public void  getPerimeter();
+//    public void  getArea();
+//
+//
+//}

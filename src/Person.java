@@ -1,6 +1,6 @@
 public class Person {
 
-    private String name;
+    public String name;
 
     public Person (String name) {
         this.name = name;
@@ -20,6 +20,7 @@ public class Person {
     }
 
     public static void main(String[] args) {
+
         Person gil = new Person("Gil");
         Person nikki = new Person("Nikki");
         System.out.println(gil.getName());

@@ -19,10 +19,9 @@ public class Input {
     }
     public static String getString () {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a string: ");
         String input = scanner.nextLine();
         if (input instanceof String) {
-            System.out.println("Well done.");
+            System.out.println("Here you go!: ");
         } else {
             System.out.println("Error: input is not a string, try again");
             getString();

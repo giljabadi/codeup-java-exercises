@@ -2,15 +2,15 @@ package shapes;
 import java.lang.Math;
 import java.util.Scanner;
 
-public class Rectangle extends Quadrilateral{
-    public void setLength() {
-
-    }
-    public void setWidth() {
-
-    }
-
-}
+//public class Rectangle extends Quadrilateral{
+//    public void setLength() {
+//
+//    }
+//    public void setWidth() {
+//
+//    }
+//
+//}
 
 
 //    protected double length;
