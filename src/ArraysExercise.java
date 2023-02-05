@@ -1,27 +1,37 @@
 import java.util.Arrays;
+
 public class ArraysExercise {
+    public static Person[] addPerson(Person[] persons, Person person){
+        Person[] temp = new Person[persons.length+1];
+
+        for(int i=0; i< persons.length; i++){
+            temp[i] = persons[i];
+        }
+
+        temp[temp.length-1] = person;
+
+        return temp;
+    }
+    @
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
-        ////////////////////
-        Person[] people = new Person[3];
 
-        people[0] = new Person("Gil");
-        people[1] = new Person("Andre");
-        people[2] = new Person("Kaylee");
+        Person[] persons = new Person[3];
+        persons[0] = new Person("Anthony");
+        persons[1] = new Person("Susan");
+        persons[2] = new Person("Bob");
 
-        for (Person p : people) {
-            System.out.println(p.getName());
+        for(Person person: persons){
+            System.out.printf("%s\n",person.name);
         }
-        ///////////////////////////////////
+        System.out.println("\nAdding 2  new people...\n");
+        persons = addPerson(persons,new Person("Shawn"));
+        persons = addPerson(persons, new Person("Pam"));
+
+        for(Person person: persons){
+            System.out.printf("%s\n",person.name);
+        }
 
     }
-    public static Person[] addPerson(Person[] oldArr, Person newPerson) {
-        Person[] newArr = Arrays.copyOf(oldArr, oldArr.length+1);
-        newArr[oldArr.length - 1] = newPerson;
-        System.out.println(newArr[oldArr.length - 1].getName());
-        return newArr;
-
-    }
-
 }

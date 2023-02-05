@@ -1,34 +1,37 @@
 package shapes;
-import java.lang.Math;
-import java.util.Scanner;
 
-//public class Square extends Quadrilateral{
-//    protected double length = 5;
-//    protected double width = 5;
-//
-//     public void setLength() {
-//
-//    }
-//    public void setWidth() {
-//
-//    }
-//    getPerimeter();
-//
-//}
+public class Square extends Quadrilateral{
 
+    public Square(int s){
+        super(s,s);
+    }
 
-//    public Square (double side) {
-//        super(side, side);
+    public double getPerimeter(){
+        return length*4;
+    }
+    public double getArea(){
+        return length*width;
+    }
+
+    public void setLength(int l){
+        length = l;
+    }
+
+    public void setWidth(int w){
+        width = w;
+    }
+//    public int side;
+//    public Square(int s){
+//        super(s,s);
+//        side = s;
 //    }
-////    @Override
-//    public double Perimeter (double side) {
-//        double perimeter = side * 4;
-//        System.out.println("The squares perimeter is: " + perimeter);
-//        return perimeter;
+//
+//
+//    public int getArea() {
+//        return 4*side;
 //    }
-////    @Override
-//    public double Area (double side) {
-//        double area = side * side;
-//        System.out.println("The squares area is: " + area);
-//        return area;
+//
+//    public int getPerimeter(){
+//        return (int)Math.pow(side,2);
 //    }
+}
